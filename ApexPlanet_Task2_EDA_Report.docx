@@ -1,0 +1,212 @@
+# ApexPlanet Task 2 – Exploratory Data Analysis Report
+
+## 1. Dataset Overview
+
+The dataset contains 1,000 sales records and 12 variables related to customer transactions.
+
+The variables are:
+
+1. Order_ID
+2. Order_Date
+3. Customer_ID
+4. Customer_Name
+5. Age
+6. Gender
+7. City
+8. Product
+9. Category
+10. Quantity
+11. Unit_Price
+12. Total_Sales
+
+The dataset is used to analyze sales performance, customer purchasing behavior, product performance, category performance, and geographic sales trends.
+
+## 2. Data Quality Findings
+
+The following data quality checks were performed:
+
+- Total records: 1,000
+- Missing Age values: 21
+- Missing City values: 14
+- Repeated Order_ID values: 9
+- Completely duplicate rows: 0
+- Age below 18: 0
+- Age above 100: 0
+- Zero Quantity values: 0
+- Negative Quantity values: 0
+- Zero Unit_Price values: 0
+- Negative Unit_Price values: 0
+- Zero Total_Sales values: 0
+- Negative Total_Sales values: 0
+
+The repeated Order_ID values were investigated. The repeated records contain different customer and transaction information, so they were not treated as duplicate rows.
+
+## 3. Sales Analysis
+
+The overall sales performance of the dataset is:
+
+- Total Records: 1,000
+- Total Sales: ₹139,399,439.65
+- Average Order Value: ₹139,399.44
+- Total Quantity Sold: 5,435
+- Average Quantity per Order: 5.44
+- Average Unit Price: ₹25,486.78
+
+The results indicate that the dataset represents a significant volume of sales transactions across multiple products and categories.
+
+## 4. Category Analysis
+
+Sales performance by category:
+
+| Category | Orders | Total Sales |
+|---|---:|---:|
+| Electronics | 354 | ₹50,778,581.70 |
+| Education | 178 | ₹25,031,689.40 |
+| Grocery | 153 | ₹22,231,711.28 |
+| Furniture | 159 | ₹21,521,561.48 |
+| Fashion | 156 | ₹19,835,895.79 |
+
+Electronics generated the highest total sales with ₹50,778,581.70 and also had the highest number of orders with 354 orders.
+
+The category with the highest average order value was Grocery at ₹145,305.30.
+
+## 5. Gender Analysis
+
+Sales performance by gender:
+
+| Gender | Orders | Total Sales |
+|---|---:|---:|
+| Male | 511 | ₹72,463,550.63 |
+| Female | 489 | ₹66,935,889.02 |
+
+Male customers generated higher total sales than female customers.
+
+The average sales per order were:
+
+- Male: ₹141,807.34
+- Female: ₹136,883.21
+
+Therefore, male customers had both higher total sales and higher average sales per order in the dataset.
+
+## 6. City Analysis
+
+Sales performance by city:
+
+| City | Orders | Total Sales |
+|---|---:|---:|
+| Patna | 135 | ₹19,285,966.89 |
+| Kolkata | 133 | ₹18,884,349.57 |
+| Bengaluru | 122 | ₹18,773,574.32 |
+| Mumbai | 131 | ₹18,750,750.17 |
+| Hyderabad | 125 | ₹17,166,660.87 |
+| Delhi | 125 | ₹16,907,979.09 |
+| Pune | 99 | ₹14,513,175.90 |
+| Gaya | 117 | ₹14,380,859.39 |
+| Unknown | 13 | ₹1,540,617.54 |
+
+Patna recorded the highest total sales at ₹19,285,966.89.
+
+The presence of an "Unknown" city is associated with missing City values that were identified during the data quality assessment.
+
+## 7. Product Analysis
+
+The products in the dataset are:
+
+- Mobile
+- Laptop
+- Book
+- Rice
+- Chair
+- Shoes
+
+Quantity sold by product:
+
+| Product | Total Quantity Sold |
+|---|---:|
+| Mobile | 1,088 |
+| Book | 977 |
+| Laptop | 970 |
+| Chair | 855 |
+| Rice | 826 |
+| Shoes | 799 |
+
+Mobile had the highest quantity sold with 1,088 units.
+
+Based on total sales, Laptop generated the highest product-level sales at ₹25,443,008.51.
+
+## 8. Customer Analysis
+
+Customer-level analysis was performed using Customer_ID and Customer_Name.
+
+The top customers by total sales were:
+
+| Customer ID | Customer Name | Total Sales |
+|---|---|---:|
+| CUST2062 | Customer_254 | ₹493,677.50 |
+| CUST4706 | Customer_200 | ₹492,174.10 |
+| CUST1711 | Customer_36 | ₹490,866.40 |
+| CUST4869 | Customer_392 | ₹485,567.80 |
+| CUST7416 | Customer_191 | ₹482,551.90 |
+| CUST9551 | Customer_230 | ₹474,395.96 |
+| CUST8381 | Customer_112 | ₹473,144.20 |
+| CUST4037 | Customer_205 | ₹470,798.60 |
+| CUST4003 | Customer_305 | ₹468,522.00 |
+| CUST4584 | Customer_138 | ₹462,701.30 |
+
+Customer CUST2062 generated the highest total sales among the customers shown in the top 10 analysis.
+
+The customer order-frequency analysis also showed that CUST2515 had the highest number of orders with 3 orders.
+
+## 9. Monthly Sales Analysis
+
+Monthly sales performance:
+
+| Month | Orders | Total Sales |
+|---|---:|---:|
+| 2025-01 | 76 | ₹10,096,190.73 |
+| 2025-02 | 86 | ₹11,511,181.46 |
+| 2025-03 | 89 | ₹13,059,899.94 |
+| 2025-04 | 80 | ₹12,222,700.17 |
+| 2025-05 | 85 | ₹10,934,689.25 |
+| 2025-06 | 83 | ₹12,912,332.64 |
+| 2025-07 | 83 | ₹11,746,226.80 |
+| 2025-08 | 75 | ₹9,448,471.22 |
+| 2025-09 | 79 | ₹9,179,986.29 |
+| 2025-10 | 84 | ₹12,508,936.50 |
+| 2025-11 | 77 | ₹12,627,620.22 |
+| 2025-12 | 98 | ₹12,299,904.44 |
+| 2026-01 | 5 | ₹893,389.99 |
+
+March 2025 recorded the highest monthly sales at ₹13,059,899.94.
+
+December 2025 recorded the highest number of orders during 2025 with 98 orders.
+
+The dataset also contains 5 records for January 2026.
+
+## 10. Key Insights
+
+The major insights obtained from the analysis are:
+
+1. The dataset contains 1,000 sales transactions with total sales of ₹139,399,439.65.
+
+2. Electronics is the strongest-performing category, generating ₹50,778,581.70 in total sales.
+
+3. Mobile is the highest-selling product by quantity, with 1,088 units sold.
+
+4. Laptop generated the highest product-level sales at ₹25,443,008.51.
+
+5. Male customers generated higher total sales than female customers.
+
+6. Patna recorded the highest city-level sales at ₹19,285,966.89.
+
+7. March 2025 recorded the highest monthly sales at ₹13,059,899.94.
+
+8. Grocery had the highest average order value among the categories at ₹145,305.30.
+
+9. The dataset contains 21 missing Age values and 14 missing City values that require cleaning or appropriate handling.
+
+10. Nine repeated Order_ID values were identified, but the corresponding records contain different transaction information and therefore were not treated as completely duplicate rows.
+
+11. No completely duplicate records were identified in the dataset.
+
+12. No negative or zero values were identified for Quantity, Unit_Price, or Total_Sales.
