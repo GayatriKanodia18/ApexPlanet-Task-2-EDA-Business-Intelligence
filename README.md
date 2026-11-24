@@ -203,4 +203,4 @@ The project also includes Power BI dashboard work and an Excel-based static dash
 
 This project demonstrates the application of **Exploratory Data Analysis, SQL-based business analysis, data visualization, and Business Intelligence** techniques to a sales dataset.
 
-The analysis helps transform raw sales
+The analysis helps transform raw sales data into meaningful information that can support understanding of sales performance, customer behavior, product contribution, demographic patterns, and business trends.
